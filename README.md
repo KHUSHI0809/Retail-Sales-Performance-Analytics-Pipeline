@@ -228,42 +228,6 @@ Forecast Accuracy % =
 
 ---
 
-## 📁 Project Structure
-
-```
-WalmartProject/
-│
-├── RawData/                          # Source CSV files
-│   ├── Walmart.csv
-│   ├── amazon.csv
-│   ├── wholefoodsorders.csv
-│   ├── Instacart_aisles.csv
-│   ├── Instacart_departments.csv
-│   ├── Instacart_products.csv
-│   └── Instacart_order_products.csv
-│
-├── SSIS_Packages/
-│   └── WalmartRetailETL/
-│       └── 01_Load_Walmart_Staging.dtsx    # Main ETL package
-│
-├── SQL_Scripts/
-│   ├── 01_Create_Database_and_Schemas.sql
-│   ├── 02_Create_Staging_Tables.sql
-│   ├── 04_Create_Dimension_and_Fact_Tables.sql
-│   ├── 05_Populate_Date_Dimension.sql
-│   ├── 06_Transform_Load_Dimensions.sql
-│   ├── 07_Transform_Load_Fact_Tables.sql
-│   └── 00_Clear_All_Tables_for_Reload.sql
-│
-├── PowerBI/
-│   └── Walmart_Sales_Dashboard.pbix
-│
-└── Documentation/
-    ├── complete_project_handoff.pdf
-    └── 604_Summary.pdf
-```
-
----
 
 ## 🚀 How to Run the ETL
 
@@ -328,19 +292,6 @@ SELECT 'Dim_Date',     COUNT(*) FROM Sales.Dim_Date;
 ✅ Automated reporting saving 10+ hours/week
 ```
 
----
-
-## 👥 Team
-
-| Name | Role |
-|------|------|
-| Khushi Shah | ETL Development, Data Warehouse Design |
-| Urja Kuppa | ETL Development, Documentation |
-| Madhurima Mukhopadhyay | Power BI Dashboards |
-| Kenil Nakrani | Data Modeling, SQL Scripts |
-| Parth Vaja | Power BI Dashboards, Analysis |
-
----
 
 ## 🏷️ Topics
 
